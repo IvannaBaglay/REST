@@ -1,0 +1,114 @@
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>pytest post_f.py
+============================================================================ test session starts ============================================================================
+platform win32 -- Python 3.7.2, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+rootdir: C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB
+collected 1 item
+
+post_f.py F                                                                                                                                                            [100%]
+
+================================================================================= FAILURES ==================================================================================
+_________________________________________________________________________________ test_post _________________________________________________________________________________
+
+    def test_post():
+
+        data = {
+            "date": "20-12-2019",
+            "temperature": -2,
+            "precipitation": 19
+        }
+        headers = {'content-type': 'application/json'}
+        print("\nrequsts.post")
+        response = requests.post("http://127.0.0.1:5000/tasks", data=json.dumps(data), headers=headers)
+        #data = r.json()
+>       assert response.status_code == 200
+E       assert 404 == 200
+E        +  where 404 = <Response [404]>.status_code
+
+post_f.py:44: AssertionError
+--------------------------------------------------------------------------- Captured stdout call ----------------------------------------------------------------------------
+
+requsts.post
+============================================================================= warnings summary ==============================================================================
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import MutableMapping
+
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import Mapping
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=================================================================== 1 failed, 2 warnings in 0.54 seconds ====================================================================
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>pytest post_f.py
+============================================================================ test session starts ============================================================================
+platform win32 -- Python 3.7.2, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+rootdir: C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB
+collected 1 item
+
+post_f.py .                                                                                                                                                            [100%]
+
+============================================================================= warnings summary ==============================================================================
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import MutableMapping
+
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import Mapping
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=================================================================== 1 passed, 2 warnings in 0.50 seconds ====================================================================
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>pytest put.py
+============================================================================ test session starts ============================================================================
+platform win32 -- Python 3.7.2, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+rootdir: C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB
+collected 0 items
+
+======================================================================= no tests ran in 0.01 seconds ========================================================================
+ERROR: file not found: put.py
+
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>pytest put_f.py
+============================================================================ test session starts ============================================================================
+platform win32 -- Python 3.7.2, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+rootdir: C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB
+collected 1 item
+
+put_f.py .                                                                                                                                                             [100%]
+
+============================================================================= warnings summary ==============================================================================
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import MutableMapping
+
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import Mapping
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=================================================================== 1 passed, 2 warnings in 0.46 seconds ====================================================================
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>pytest delete_f.py
+============================================================================ test session starts ============================================================================
+platform win32 -- Python 3.7.2, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+rootdir: C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB
+collected 1 item
+
+delete_f.py .                                                                                                                                                          [100%]
+
+============================================================================= warnings summary ==============================================================================
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\utils.py:485: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import MutableMapping
+
+c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318
+  c:\users\ivanka baglay\appdata\local\programs\python\python37\lib\site-packages\jinja2\runtime.py:318: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+    from collections import Mapping
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+=================================================================== 1 passed, 2 warnings in 0.45 seconds ====================================================================
+
+C:\Users\Ivanka Baglay\Desktop\6 sem\арх\LAB>
